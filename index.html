@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <!-- css link -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo_icon.png" type="image/x-icon">
+  <title>css selector reference</title>
+</head>
+<body>
+   <header>
+    <div class="container">
+      
+   <h1>element + element</h1>
+    <div id="plus">
+       <p>I live in Dhaka</p>
+    </div>
+       <p>My best friend is #</p>
+  
+       <hr>
+  
+   <h1>element~element</h1>
+       <p id="tilde">The first paragraph.</p>
+  <ul class="tidle">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <h2>Another list</h2>
+  <ul class="tidle">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul><hr>
+  
+  
+  
+  <h1>[attribute]</h1>
+  <a id="second-b" href="https://www.Youtube.com">Youtube</a><br>
+  <a id="second-b" href="https://www.google.com" target="_blank">Google</a><br>
+  <a id="second-b" href="https://www.chrome id="2nd-b".com" target="_blank">Chrome</a>
+  <hr>
+  
+  <h1>[attribute=value]</h1>
+  <a id="a-b"href="https://www.w3schools.com">W3schools.com</a><br>
+  <a id="a-b"href="https://www.google.com" target="_blank">Google.com</a><br>
+  <a id="a-b"href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+  
+  <hr>
+  <h1>[attribute|=value]</h1>
+  <p lang="ba">Hello!</p>
+  <p lang="ba-ng">Hi!</p>
+  <p lang="ba-gb">Ello!</p>
+  <p lang="us">Hi!</p>
+  <p lang="no">Hei!</p>
+  <hr>
+  <h1>[attribute^=value]</h1>
+  <div class="first_test">The first test</div>
+  <div class="second">The second test.</div>
+  <div class="test">The third test.</div>
+  <div class="test_ex">The fourth test</div>
+  <p class="test">paragraph.</p>
+  <p class="test_ex">paragraph.</p>
+  <hr>
+  
+  <h1>[attribute$=value]</h1>
+  <div class="col">first.</div>
+  <div class="col-umn">second</div>
+  <div class="col_umn">third</div>
+  <p class="test">para</p>
+  
+  <hr>
+  <h1>[class*="test"]</h1>
+  <div class="oll">1</div>
+  <div class="boll">2</div>
+  <div class="all">3</div>
+  
+  <hr>
+  <h1>::after</h1>
+  <p id="after">My name is Sourav</p>
+  <h1>::before</h1>
+  <p id="before">My name is Sourav</p>
+  
+  <hr>
+  <h1>::first-letter</h1>
+  <p class="f-l">Sourav</p>
+  <h1>::first-line</h1>
+  <p class="f-line">To stop the degradation of the planet's natural environment and to build a future in which humans live in harmony with nature, by; conserving the world's biological diversity, ensuring that the use of renewable natural resources is sustainable, and promoting the reduction of pollution and wasteful consumption.</p>
+  
+  <hr>
+  <h1>::placeholder</h1>
+  <input type="text" name="fname" placeholder="First name">
+  
+  <hr>
+  <h1>::selection</h1>
+  <p class="select">This is a paragraph.</p>
+  <h1>::marker</h1>
+  <ul>
+    <li class="mark">Coffee</li>
+    <li class="mark">Tea</li>
+    <li class="mark">Milk</li>
+  </ul>
+  
+  
+  <hr>
+  <h1>:link,:visited,:hover,:active</h1>
+  <a class="link" href="https://www.w3schools.com">W3Sschools</a>
+  
+  <h1>:checked</h1>
+  <form action="">
+    <input type="radio" checked="checked" value="male" name="gender" class="check"> Male<br>
+    <input type="radio" value="female" name="gender" class="check"> Female
+    <hr>
+  <h1>:default,:enabled,:disabled </h1>
+    <form action="">
+    <input type="radio" name="gender" value="male" class="def" checked> Male
+    <input type="text" name="gender" value="male" class="def">
+    Country: <input type="text" disabled="disabled" value="Disneyland" class="dis">
+    <hr>
+  <h1>:empty</h1>
+    <p class="empty"></p>
+  
+    <hr>
+  <h1>first-child,last-child</h1>
+    <p class="first-child l-c">This paragraph is the first child of its parent (body).</p>
+  <p class="first-child l-c">This paragraph is not the first child of its parent (body).</p>
+  
+  <div>
+    <p class="first-child l-c">This paragraph is the first child of its parent (div).</p>
+    <p class="first-child l-c">This paragraph is not the first child of its parent (div).</p>
+  </div>
+  
+  <hr>
+  <h1>first-of-type,last of type</h1>
+  <p class="lot" class="fot">The first paragraph.</p>
+  <p class="lot" class="fot">The second paragraph.</p>
+  <p class="lot" class="fot">The third paragraph.</p>
+  <p class="lot" class="fot">The fourth paragraph.</p>
+  
+  
+  <hr>
+  <h1>:focus</h1>
+  <form>
+    Name: <input type="text" name="firstname" class="focus">
+  </form>
+  
+  <hr>
+  
+  <h1>:in-range,:out-of-range</h1>
+  <input type="number" min="3" max="23" value="9" class="in">
+  <input type="number" min="5" max="10" value="17" class="out">
+  
+  <hr>
+  <h1>:valid,:invalid</h1>
+  <input type="email" value="" class="valid">
+  <input type="email" value="supportEmail" class="invalid">
+  
+  <hr>
+  
+  <h1>:lang</h1>
+  <p class="lang" lang="it">Ciao bella!</p>
+  
+  <hr>
+  <h1>:target</h1>
+  
+  <p><a href="#news" target="">Jump to New content 1</a></p>
+  <p id="news"><b>New content 2...</b></p>
+  
+  <hr>
+  <h1>:required,:optional</h1>
+  <input type="text" required class="req">
+  <input type="text" class="option">
+  
+  
+  <hr>
+  <h1>:read-only,read-write</h1>
+  <p>readonly:<br><input readonly value="hello"></p>
+  <p>A normal input element:<br><input value="hello" class="write"></p>
+  
+  <hr>
+  
+  <h1>only-child</h1>
+  <div><p class="one">This is a paragraph.</p></div>
+  <h1>only-of-type</h1>
+  <div><p class="one-type">This is a paragraph.</p></div>
+  
+  <hr>
+  
+  <h1>nth-child,nth-of-type,nth-last-child,nth-last-of-type</h1>
+  <ul>
+    <li class="n-child">First list item</li>
+    <li class="n-child">Second list item</li>
+    <li class="n-child">Third list item</li>
+    <li class="n-child">Fourth list item</li>
+    <li class="n-child">Fifth list item</li>
+  </ul>
+  <hr>
+    </div>
+   </header>
+</body>
+</html>

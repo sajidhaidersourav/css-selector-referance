@@ -1,0 +1,154 @@
+header{
+  padding: 20px 0px 20px;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid blue;
+  padding: 30px;
+}
+#grater > p {
+  background-color: #5eff00;
+}
+#plus + p {
+  background-color: red;
+}
+#tilde ~ .tidle {
+  background: #ff0000;
+}
+#second-b[target] {
+  background-color: #00ccff;
+}
+#a-b[target="_blank"] {
+  background-color: pink;
+}
+[lang|="ba"] {
+  background: #6f00ff;
+}
+div[class^="test"] {
+  background: burlywood;
+}
+div[class$="umn"] {
+  background: red;
+}
+div[class*="oll"] {
+  background: #ff00aa;
+}
+#after::after { 
+  content: " - Remember this";
+}
+#before::before { 
+  content: " Remember this  -";
+}
+.f-l::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}
+.f-line::first-line {
+  background-color: #00f7ff;
+}
+::placeholder {
+  color: red;
+}
+.select::selection {
+  color: red;
+  background: #ff0040;
+}
+.mark::marker { 
+  color: blue;
+}
+.link:link {
+  color: #00ff9d;
+}
+.link:visited {
+  color: pink;
+}
+.link:hover {
+  color: red;
+}
+.link:active {
+  color: green;
+}
+.check:checked {
+  height: 50px;
+  width: 50px;
+}
+.def:default {
+  box-shadow: 0 0 1px 1px red;
+}
+.def[type=text]:enabled {
+  background: #00ff22;
+}
+.dis[type=text]:disabled {
+  background: #dddddd;
+}
+.empty:empty {
+  width: 100px;
+  height: 20px;
+  background: #ff0000;
+}
+.first-child:first-child {
+  background-color: #00ffb3;
+}
+.l-c:last-child {
+  background-color: pink;
+}
+.fot:first-of-type {
+  background: red;
+}
+.lot:last-of-type {
+  background: #ff00bf;
+}
+.focus:focus {
+  background-color: burlywood;
+}
+.in:in-range {
+  border: 2px solid blue;
+}
+
+.out:out-of-range {
+  border: 2px solid red;
+}
+.valid:valid {
+  background-color: green;
+}
+.invalid:invalid {
+  border: 2px solid red;
+}
+.lang:lang(it) { 
+  background: burlywood;
+}
+:target {
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+}
+.req:required {
+  background-color: #ff9900;
+}
+.option:optional {
+  background-color: red;
+}
+input:read-only {
+  background-color: #00ff62;
+}
+.write:read-write {
+  background-color: burlywood;
+}
+.one:only-child {
+  color: red;
+}
+.one-type:only-of-type {
+  color: green;
+}
+.n-child:nth-child(2) {
+  background: red;
+}
+.n-child:nth-of-type(3) {
+  background: lightgreen;
+}
+.n-child:nth-last-child(2) {
+  background: burlywood;
+}
+.n-child:nth-last-of-type(1) {
+  background: #f700ff;
+}
